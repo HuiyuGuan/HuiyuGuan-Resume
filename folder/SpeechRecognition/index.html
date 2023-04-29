@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Speech Recognition Project</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+
+<body>
+    <h1>Speech Recognition Project</h1>
+    <div id="speechBox">
+        <h2>Instructions: </h2>
+        <p>
+            Say "color _____" to change the color of the circle. For example "color blue" to make the circle blue.<br>
+            Say "size _____" to change the size of the circle. For example "size 50" to make the circle with a diameter of 50.<br>
+            Say "Help" if you need help.
+        </p>
+        <button id="speakButton" type="submit" onclick="speak()">Speak</button>
+        <p id="text"></p>
+        <canvas id="speechCanvas" width="600" height="600"></canvas>
+        <script src="script.js"></script>
+    </div>
+</body>
+<footer id="footer">CISC 3610 Huiyu Guan <a href="../index.html">Return to main page</a></footer>
+
+</html>

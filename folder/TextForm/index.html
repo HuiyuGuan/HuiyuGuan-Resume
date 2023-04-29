@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Text Form</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1 class="title">Text Form</h1>
+    <div id="textForm">
+        <form id="form">
+            <label><br>Name: </label>
+            <input type="name" id="name" name="name" /><br />
+            <label>background Color: </label>
+            <input type="color" id="backgroundcolor" name="backgroundcolor" /><br />
+            <label>Text Color: </label>
+            <input type="color" id="textColor" name="textColor" /><br />
+            <label>Font Size: </label>
+            <input type="range" id="fontSize" name="fontSize" min="12" max="48" value="12" /><br />
+            <label>Font style: <br /></label>
+            <input type="radio" id="font" name="font" value="Arial" onclick="changeStyle(this)" />
+            <label for="font" style="font-family: Arial;">Arial</label><br />
+            <input type="radio" id="font" name="font" value="Times New Roman" onclick="changeStyle(this)" />
+            <label for="font" style="font-family: Times New Roman;">Times New Roman</label><br />
+            <input type="radio" id="font" name="font" value="Gill Sans" onclick="changeStyle(this)" />
+            <label for="font" style="font-family: Gill Sans;">Gill Sans</label><br /><br />
+
+            <input type="button" id="change" value="change" onclick="changeStyle()" />
+            <input type="button" id="reset" value="Reset" onclick="resetStyle()" />
+        </form>
+    </div>
+    <div id="textbox">
+        <br>
+        <p id="text"></p>
+        <br>
+    </div>
+</body>
+<footer id="footer">CISC 3610 Huiyu Guan <a href="../index.html">Return to main page</a></footer>
+
+</html>
