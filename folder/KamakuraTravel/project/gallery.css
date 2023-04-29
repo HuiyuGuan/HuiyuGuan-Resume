@@ -1,0 +1,27 @@
+@charset "utf-8"
+
+
+
+html{
+
+}
+
+div h1 {
+   text-align: center;
+}
+div#mySildees{
+  position: relative;
+}
+
+div img.demo {
+  cursor: pointer;
+}
+
+div.column {
+  float: left;
+  width: 16.66%;
+}
+
+div img#demo{
+  object-fit: cover;
+}

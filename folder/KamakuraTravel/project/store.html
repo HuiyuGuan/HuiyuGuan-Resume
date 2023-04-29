@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Online Store</title>
+	<link href="layout.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link href="store.css" rel="stylesheet">
+	<script type="text/javascript" src="order.js"></script>
+</head>
+
+<body>
+	<header>
+         <form id="memberForm" method="post" action="">
+            <label for="name">Usernames</label>
+            <input id="name" name="name" type="text" />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="pwd" />
+         <button class="btn" type="button" onclick="login()">login</button>
+         </form>
+		<img src="picture1.webp" alt="kamakura">
+		<nav class = "horizontalNavigation">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="direction.html">Direction</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="store.html">Store</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<h1>Online store</h1>
+		<div id="left">
+			<div class="picture"><a href="sale1.html"><img src="sale1.webp" alt="Japanese Omamori" id="sale1"></a></div>
+			<div class="text" id="sale1text"><a href="sale1.html">Omamori</a></div>
+		</div>
+		<div id="right">
+			<div class="picture"><a href="sale2.html"><img src="sale2.png" alt="puzzles" id="sale2"></a></div>
+			<div class="text" id="sale2text"><a href="sale2.html">Puzzles</a></div>
+		</div>
+	</section>
+
+
+
+
+<footer>Travel to Kamakura &copy; 2021 All Rights Reserved</footer>
+</body>

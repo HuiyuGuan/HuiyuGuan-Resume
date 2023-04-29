@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Orders</title>
+	<link href="layout.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link href="store.css" rel="stylesheet">
+	<script type="text/javascript" src="order2.js" async></script>
+
+</head>
+
+<body>
+	<header>
+         <form id="memberForm" method="post" action="">
+            <label for="name">Usernames</label>
+            <input id="name" name="name" type="text" />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="pwd" />
+         <button class="btn" type="button" onclick="login()">login</button>
+         </form>
+		<img src="picture1.webp" alt="kamakura">
+		<nav class = "horizontalNavigation">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="direction.html">Direction</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="store.html">Store</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="summary">
+		<h1 id="sale2">Kamakura puzzles(1000 pieces)</h1>
+		<h2>From <a href="">Cat's Sky City</a></h2>
+		<h3>Customer Rating(734 votes): <img src="stars2.png" alt="3.5 stars" id="stars2" /></h3>
+		<img src="sale2.png" alt="kamakura puzzles">
+		<p>This one 1000-piece puzzle. Puzzles can relieve stress and allow us to experience beauty. This one has the Kamakura representative train pattern and the sea as the background, so you can put it in your home as a decoration after the puzzle.</p>
+	</section>
+
+<section id="orderSection">
+      <form id="orderForm" name="orderForm" action="payment.html" method="get">
+        
+        <table id="orderTable">
+           <caption><h2>Product Order</h2></caption>
+           <tr>
+              <td colspan="3">
+                 <input type="text" id="orderDate" name="orderDate" readonly />
+              </td>
+           </tr>
+           <tr>
+              <td id="item2">
+                 <label for="model">Kamakura puzzles(1000 pieces) ($20)</label>
+                 <input type="hidden" name="model" id="model" value="20" />
+                 <input type="hidden" id="modelName" name="modelName" value="Kamakura puzzles(1000 piece) ($20)" />
+              </td>
+              <td class="rightA">
+                 <label for="qty">Qty</label>
+                 <select name="qty" id="qty">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option>
+                 </select>   
+              </td>                 
+              <td>
+                 <input type="text" name="initialCost" id="initialCost" size="10" readonly />
+              </td>
+           </tr>
+           <tr>
+              <td colspan="2"> 
+                 <input type="hidden" id="ShippingType" name="ShippingType" />
+                    <fieldset>
+                    <legend>Shipping</legend>
+                    <label><input type="radio" id="overnight" name="shipping" value="128.50" checked /> 3-Day Shipping ($128.50 per)</label>
+                    <label><input type="radio" id="day_2" name="shipping" value="60" /> 5-7 Day Shipping ($60.00 per)</label>   
+                    <label><input type="radio" id="ground" name="shipping" value="20.95" /> Ground Shipping ($20.95 per)</label> 
+                 </fieldset>
+              </td>
+              <td>
+                 <input type="text" name="shippingCost" id="shippingCost" size="10" readonly />
+              </td>
+           </tr>        
+           <tr>
+              <td colspan="2" class="rightA">Subtotal</td>
+              <td class="outcell">
+                 <input type="text" name="subtotal" id="subtotal" size="10" readonly />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">Tax (8%)</td>
+              <td>
+                 <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">TOTAL</td>
+              <td>
+                 <input type="text" name="totalCost" id="totalCost" size="10" readonly />
+              </td>
+           </tr>
+        </table>
+        <input type="submit" id="buttonAdd" value="add to cart" />
+
+      </form>
+   </section>
+
+
+
+
+
+	<footer>Travel to Kamakura &copy; 2021 All Rights Reserved</footer>
+</body>
